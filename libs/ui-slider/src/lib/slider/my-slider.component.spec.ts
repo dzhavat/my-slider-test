@@ -22,6 +22,6 @@ describe(MySliderComponent.name, () => {
 
     const sliders = fixture.debugElement.queryAll(By.css('[role="slider"]'));
 
-    expect(sliders).toHaveLength(2);
+    expect(sliders).toHaveLength(3);
   });
 });
