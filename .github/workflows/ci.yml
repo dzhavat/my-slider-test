@@ -1,0 +1,22 @@
+name: Test CI
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    name: Unit test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v2
+
+      - name: Install package dependencies
+        run: npm install
+
+      - name: Test projects
+        run: npm test
