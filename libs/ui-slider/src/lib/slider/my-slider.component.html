@@ -1,0 +1,7 @@
+<ngx-slider
+  [value]="value.min"
+  [highValue]="value.max"
+  (valueChange)="onChange({ min: $event, max: value.max })"
+  (highValueChange)="onChange({ min: value.min, max: $event })"
+  [options]="options"
+></ngx-slider>

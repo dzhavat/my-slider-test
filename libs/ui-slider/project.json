@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/ui-slider/src",
+  "prefix": "slider",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-slider"],
+      "options": {
+        "jestConfig": "libs/ui-slider/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-slider/**/*.ts",
+          "libs/ui-slider/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

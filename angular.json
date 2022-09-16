@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "slider": "apps/slider",
-    "slider-e2e": "apps/slider-e2e"
+    "slider-e2e": "apps/slider-e2e",
+    "ui-slider": "libs/ui-slider"
   }
 }
